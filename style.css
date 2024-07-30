@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+    height: 70px;
+    /* background-color: green; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color:#185DC7;
+}
+
+.navlist li a{
+    color: black;
+}
+
+.buttons-items{
+    /* background-color: red; */
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.login{
+    color: black;
+}
+
+.started{
+    background-color: #185DC7;
+    padding: 10px;
+    border-radius: 100px;
+    color: white;
+}
+
+.container{
+    /* background-color: red; */
+    height:auto;
+    padding:50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+
+.box1{
+    width: 50%;
+}
+
+.box2{
+    width:50%;
+    /* background-color: blue; */
+    height:auto;
+    width: fit-content;
+}
+
+.box2 img{
+    height: 300px;
+    clip-path: circle();
+    background-color: #185DC7;
+}
+
+.heading-text{
+    width:auto;
+    height: auto;
+    /* background-color: red; */
+}
+
+.heading-text h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.description{
+    width: fit-content;
+    height: auto;
+    /* background-color: red; */
+}
+
+.description p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+
+
+
+
+@media screen and (max-width: 755px) {
+    .navigation{
+        flex-direction: column;
+        display: none;
+    }
+
+    .navlist{
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .box1{
+        width: 100%;
+    }
+
+    .box2{
+        width: 100%;
+        /* display: none; */
+    }
+
+    .box2 img{
+        clip-path: none;
+        margin-top: 20px;
+    }
+
+    .heading-text h1{
+        font-size: 30px;
+    }
+}
