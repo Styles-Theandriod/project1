@@ -4,9 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .navigation{
     height: 70px;
-    /* background-color: green; */
+    background-color: white;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -60,9 +61,24 @@ a{
     /* background-color: red; */
     height:auto;
     padding:50px 50px;
+}
+
+.myboxes{
     display: flex;
     justify-content: center;
-    align-items:start;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.flex-items{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .box1{
@@ -73,13 +89,13 @@ a{
     width:50%;
     /* background-color: blue; */
     height:auto;
-    width: fit-content;
+    width:auto;
 }
 
 .box2 img{
     height: 300px;
     clip-path: circle();
-    background-color: #185DC7;
+    /* background-color: #185DC7; */
 }
 
 .heading-text{
@@ -105,6 +121,56 @@ a{
     
 }
 
+.flex-container{
+    /* background-color: #185DC7; */
+    margin-top: 100px;
+}
+
+.card1 p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.LearnMore{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+.w-50{
+    height: 400px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.card1{
+    width: 50%;
+    /* background-color: tomato; */
+    height:auto;
+}
+
+.card2{
+    /* background-color: blueviolet; */
+    width:fit-content;
+}
+
+.card2 img{
+    height: 300px;
+}
+
+.space-right{
+    margin-right: 100px;
+}
+
 
 
 
@@ -112,31 +178,77 @@ a{
     .navigation{
         flex-direction: column;
         display: none;
+        position: absolute;
+        background-color:#185DC7;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 500px;
     }
 
     .navlist{
         flex-direction: column;
     }
+    .buttons-items{
+        width: 100%;
+    }
 
-    .container{
+    .started{
+        background-color: white;
+        color: black;
+    }
+
+    .logo{
+        color:white;
+        font-size: 100px;
+    }
+    .myboxes{
         flex-direction: column;
     }
 
     .box1{
         width: 100%;
+        /* background-color: red; */
     }
 
     .box2{
         width: 100%;
         /* display: none; */
+        display: flex;
+        justify-content: center;
     }
 
     .box2 img{
         clip-path: none;
         margin-top: 20px;
+        display: none;
     }
 
     .heading-text h1{
         font-size: 30px;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+    .card1{
+        width: 100%;
+        height:auto;
+    }
+
+    .card2{
+        width: 100%;
+        margin-top: 40px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card2 img{
+        display: none;
+    }
+
+    .container{
+        padding: 10px;
     }
 }
